@@ -2,7 +2,6 @@
 @import '../mixins';
 
 .details {
-
   &__title {
     @include section-title;
   }

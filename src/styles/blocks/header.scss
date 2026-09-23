@@ -3,6 +3,7 @@
 
 .header {
   @include background-image;
+
   background-position: right;
 
   display: flex;
@@ -55,17 +56,6 @@
       cursor: pointer;
     }
 
-    &__phone-link {
-      position: relative;
-      display: inline-block;
-
-      &:hover .header__hero__phone-number,
-      &:focus-visible .header__hero__phone-number {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
     &__phone-number {
       display: none;
 
@@ -88,6 +78,17 @@
         transition:
           opacity 0.3s ease,
           visibility 0.3s ease;
+      }
+    }
+
+    &__phone-link {
+      position: relative;
+      display: inline-block;
+
+      &:hover .header__hero__phone-number,
+      &:focus-visible .header__hero__phone-number {
+        opacity: 1;
+        visibility: visible;
       }
     }
 

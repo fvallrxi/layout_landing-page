@@ -2,7 +2,6 @@
 @import '../mixins';
 
 .contacts {
-
   &__title {
     @include section-title;
 
@@ -48,16 +47,19 @@
     font-size: $space-2 - 2;
     color: $color-dark;
 
-    &::placeholder {
-      color: rgba($color-dark, 0.5);
-      transition: color 0.3s ease;
-    }
-
-    &:hover {
-      color: $hover-text-color;
-
+    &__input,
+    &__textarea {
       &::placeholder {
+        color: rgba($color-dark, 0.5);
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
         color: $hover-text-color;
+
+        &::placeholder {
+          color: $hover-text-color;
+        }
       }
     }
   }
@@ -70,6 +72,7 @@
 
   &__btn {
     @include button;
+
     margin-top: $space-4;
     max-width: none;
 
