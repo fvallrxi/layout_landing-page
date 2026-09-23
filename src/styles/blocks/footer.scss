@@ -1,0 +1,7 @@
+@import '../variables';
+@import '../mixins';
+
+footer {
+  @include background-image;
+  background-image: url('/src/images/footer.png');
+}
