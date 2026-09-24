@@ -1,7 +1,6 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-
 .header {
   @include background-image;
 
@@ -55,6 +54,14 @@
 
     &__menu {
       cursor: pointer;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.03);
+      }
     }
 
     &__phone-number {
@@ -101,6 +108,14 @@
 
     &__phone {
       padding-right: $space-3;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.03);
+      }
     }
   }
 }

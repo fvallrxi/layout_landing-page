@@ -1,7 +1,6 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-
 .menu {
   position: fixed;
   inset: 0;
@@ -46,10 +45,15 @@
     position: absolute;
     top: $space-3;
     right: 20px;
-    padding: 0;
     border: none;
     background: none;
     cursor: pointer;
+    padding-top: 8px;
+
+    @include tablet {
+      padding-right: 52px;
+      padding-top: 20px;
+    }
   }
 
   &__list {
